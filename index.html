@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" 
+    rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Zomato-landing-page</title>
+</head>
+
+<body>
+    
+    <header>
+      <!--navbar-->
+        <nav class="navbar">
+       
+         <div class="navbar__brand">
+            <img src="./assets/logo.png" alt="logo" class="navbar__logo" />
+         </div>
+
+         <div class="navbar__nav_items">
+            <button class="nav_item button__primary">Order Food</button>
+         </div>
+        </nav>
+    </header>
+
+    <!--hero container/main section of the page-->
+        <main class="container">
+            <section class="hero__container">
+                 <div class="hero__image__container">
+                    <img  class="hero__image" src="./assets/hero.jpg" alt="hero image" />
+                 </div>   
+                 <div class="hero__description">
+                    <h1 class="hero__text" >
+                        Order food from your favourite restaurants near you
+                    </h1>
+                    
+                    <button class="button__primary">Order Now</button>
+                 </div>
+            </section>
+
+            <!--Explore Menu-->
+            <section class="explore__menu__container">
+                <h1 class="explore__menu__text">Explore our menu</h1>
+                <div class="explore__menu__gradient__bg"></div>  
+                <div class="explore___menu___lists">
+                    
+                    <div class="food__menu__card" id="burger__card">
+                        <img class="food__image "src="./assets/burger.jpg" alt="burger" />
+                        <div class="food__menu__card__description">
+                            <h3 class="food__title"></h3>
+                            <p class="food__restaurants">Burger King, Mcdonalds, Burger Place 
+                                <span style="color: red;">+3</span>
+                            </p>
+                        </div>
+                    </div>
+                        
+                    <div class="food__menu__card" id="pizza__card">
+                        <img class="food__image "src="./assets/pizza.jpg" alt="pizza" />
+                        <div class="food__menu__card__description">
+                            <h3 class="food__title"></h3>
+                            <p class="food__restaurants">Pizza Hut, Domino's Pizza  
+                                <span style="color: red;">+3</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="food__menu__card" id="ice__cream__card">
+                        <img class="food__image "src="./assets/iceCream.jpg" alt="iceCream" />
+                        <div class="food__menu__card__description">
+                            <h3 class="food__title"></h3>
+                            <p class="food__restaurants">Baskin Robins, Ibaco  
+                                <span style="color: red;">+3</span>
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                
+                  <div class="explore__menu__view__more">
+                    <button class="button__primary">view more</button> 
+                </div>
+            </section>
+
+            <!--Restaurants-->
+            <section class="restaurants__container">
+                <h1 class="restaurants__description">Order From 100s of restaurants</h1>
+                <div class="restaurants__grid">
+                        <div class="restaurants__grid__row__one">
+                        <div class="restaurant__1">
+                            <img class="restaurant__1__image" src="./assets/restaurant1.jpg" alt="restaurant__1" />                     
+                        </div>
+                        <div class="restaurant__2">
+                            <img class="restaurant__2__image" src="./assets/restaurant2.jpg" alt="restaurant__2" />
+                        </div>
+                        </div>
+
+                        <div class="restaurants__grid__row__two">
+                        <div class="restaurant__3">
+                                <img class="restaurant__3__image" src="./assets/restaurant3.jpg" alt="restaurant__3" />
+                            </div>
+                        <div class="restaurant__4">        
+                                <img class="restaurant__4__image" src="./assets/restaurant4.jpg" alt="restaurant__4" />
+                            </div>
+                        </div>
+                </div>
+            </section>
+
+            <section class="subscription__container">
+                <h1 class="subscription__container__heading"> Stay Updated</h1>
+                <div class="subscription__container__details">
+                    <input type="email" placeholder="username@email.com" id="email" />
+                    <div class="subscription__container__details__button">
+                    <button class="subscription__button button__primary" >Get Updates</button>
+                    </div>
+                </div>
+            </section>
+                
+            <sectiona class="quote__and__image__container">
+               <div class="quote__image"></div>
+                <h1 class="quote__text">
+                    When a man's stomach is full it makes no difference whether he is rich or poor.
+                </h1> 
+            </sectiona>
+        </main>
+    
+        <footer>
+            <img src="./assets/logo.png" alt="logo">
+            <ul>
+              <li>Pricing</li>
+              <li>Terms and condition</li>
+              <li>Partnership</li>
+              <li>Career</li>
+              <li>Contact</li>
+            </ul>
+          </footer>
+     
+          
+    </body>
+</html>

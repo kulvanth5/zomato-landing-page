@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Global*/
+
+body{
+    background-color:  #ebf2ff;
+    font-family: noto-serif , sans-serif;
+    overflow-x: hidden;
+    display: block;
+}
+
+.button__primary{
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );   
+        color: white;
+        padding: 8px;
+        border:none;
+        border-radius: 6px;  
+        cursor: pointer;    
+}
+
+/* Hero Menu*/
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.hero__container{
+    width: 100%;
+
+}
+
+.hero__image__container{
+    width: 100%;
+}
+
+.hero__image{
+    width: 100%;
+}
+
+.hero__text{
+    font-size: 30px;
+    color:#1d3557;
+    font-family: merryweather;
+}
+
+.explore__menu__view__more{
+    display: flex;
+    justify-content: center;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9fafc;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    z-index: 9999;
+  }
+
+/*Explore menu*/
+
+.explore__menu__container{
+    margin-top: 40px;
+    width : 100%;
+}
+
+.explore__menu__text{
+    
+    color:#1d3557;
+    font-family: merryweather;
+    text-align: center;
+    font-size: 50px;
+}
+.food__menu__card{
+    width: 100%;
+    background-color: white;
+    border-radius: 8px
+}   
+
+.food__image{
+    width: 100%;
+    border-radius: 8px 8px 0 0 ;
+}
+
+.food__menu__card__description{
+    padding: 20px;
+}
+
+/*Navbar*/
+
+.navbar{
+    background-color: #f9fafc;
+}
+.navbar__brand{
+    width: 100px;
+}
+
+.navbar__logo{
+    width: 100%;
+}
+
+/*restaurant flex*/
+
+.restaurants__description{
+    font-size: 30px;
+    color:#1d3557;
+    font-family: merryweather;
+    text-align: center;
+}
+.restaurants__grid__row__one,
+.restaurants__grid__row__two{
+    width: 100%;
+    display: flex;
+    gap: 4px;
+}
+
+.restaurants__grid__row__one{
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+
+.restaurant__1__image , .restaurant__2__image,
+.restaurant__3__image , .restaurant__4__image{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.restaurant__1 , .restaurant__4{
+     width: 100%;
+     height: 150px;
+}
+
+.restaurant__2 , .restaurant__3{
+    width: 150%;
+    height: 200px;
+}
+
+/*Subscription container*/
+
+subscription__container{
+    width: 100%;
+}
+
+.subscription__container__heading{
+    font-size: 30px;
+    color:#1d3557;
+    font-family: merryweather;
+    text-align: left;
+    margin-top: 15%; 
+
+}
+
+.subscription__container__details{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+}
+
+#email{
+    margin-top: 5px;
+    background-color: #f3aeae;
+    width: 75%;
+    border-radius: 5px;
+    border-color: black;
+   
+}
+
+  
+.email::placeholder {
+    color: #bdbcbc;
+  }
+
+/*quote and imag styling*/
+
+.quote__and__image__container{
+        position: relative;
+        margin-top: 4rem;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 200px;
+        width: 100%;
+        border-radius: 13px;
+        background: url("https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80")
+          center center / cover no-repeat;
+}
+
+.quote__image{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background-color: #0a4065;
+    opacity: 49%;
+  }
+
+.quote__text{
+    color: #fff;
+    z-index: 3;
+    margin: 0 1rem;
+    text-align: center;
+    font-size: 25px;
+  }
+    
+  /*footer */
+
+
+  
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem 1rem 0 0;
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%
+    );
+  }
+
+footer > img {
+    width: 300px;
+    filter: brightness(0) invert(1);
+  }
+  
+  footer > ul {
+    margin-top: -1rem;
+    color: #fff;
+  }
+
+  footer > ul > li {
+    margin: 5px 0;
+    list-style: none;  
+  }
+
+@media (min-width: 768px){
+    .navbar{
+        justify-content: space-between;
+        padding: 10px 20px;
+        position: sticky;
+        top: 0;
+        height: 72px;
+    }
+    .navbar__brand{
+        width: 150px;
+    }
+    .button__primary{
+        padding: 15px;
+        font-size: 15px;
+        width: 150px;
+        font-family: sans-serif;
+        margin-top: 14;        
+    }
+    
+    .explore__menu__text{
+        margin-bottom: -37px;
+    }
+
+    .explore__menu__container{
+        position: relative;
+    }
+
+    .explore__menu__gradient__bg{
+        position: absolute;
+        left: 0;
+        right: 0;
+
+        height: 100%;
+        width: 100%;
+       
+        background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+        );  
+        
+        z-index: -3;
+        transform: skewY(-5deg);
+    }
+    .hero__container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .explore___menu___lists{
+        display: flex;
+        gap: 8px;
+        margin-top: 50px;
+    }
+
+    #pizza__card{
+        margin-top: -10px;
+        margin-bottom: 22px;
+    }
+
+    #burger__card{
+        margin-top: 20px;
+        margin-bottom: -8px;
+    }
+
+    #ice__cream__card{
+        margin-top: 20px;
+        margin-bottom: -8px;
+    }
+
+    .restaurants__description{
+        font-size: 40px;
+        width: 100%;
+        color:#1d3557;
+        font-family: merryweather;  
+        
+     }
+     
+     .restaurants__container{
+         display: flex;
+         align-items: center;
+         margin-top: 30px;
+        
+     }
+
+     .subscription__container{
+         max-width: 100%;
+     }
+     .subscription__container__heading{
+         margin-left: 25%;
+     }
+
+     .subscription__container__details{
+         display: flex;
+         justify-content: center;
+         gap: 8px;
+         
+     }
+
+     #email{
+         width: 20rem;
+     }
+
+     .quote__and__image__container{
+         height: 300px;
+         width: 100%;
+     }
+     .quote__image{
+         height: 300px;
+         width: 100%;
+         position: absolute;
+         border-radius: 13px;
+         opacity: 50%;
+         background-color: #0a4065;
+     }
+     .quote__text{
+         font-size: 2rem;
+         font-family: Arial, Helvetica, sans-serif , sans-serif
+         font-weight: 500;
+         line-height: 1.2;;
+     }
+
+     footer{
+         width: 100%;
+         flex-direction: row;
+         justify-content: space-evenly;
+     }
+}
+
+
+@media (min-width: 1020px){
+    
+    .container{
+        max-width: 1010px;
+    }
+    .hero__image__container{
+        max-width: 100%;
+    }
+    .hero__text{
+        font-size: 50px;
+        
+    }
+    .restaurants__description{
+        font-size: 50px;
+        width: 100%;
+        color:#1d3557;
+        font-family: merryweather;
+        padding: 8%;
+     }
+    
+}
+
+
